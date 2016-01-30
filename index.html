@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" media="screen">
+
+</head>
+
+<body> 
+	
+	<div class="main-body">
+
+		<h1 class="header" >Rock, Paper, Scissors</h1>
+
+		<p class="header" >Lets play rock, paper, scissors! Rock covers scissors, scissors cut paper and paper beats rock. If both players throw the same shape, the game is tied</p>
+
+		<div class="r-p-s">
+ 			
+			<div class="one_three">
+			
+				<h3>Pick one</h3>
+			
+				<ul class="choices">
+					<li>
+						<a onclick="compare('rock', computerChoice)">
+							<img src="assets/img/rock.jpg" width="100px" />
+						</a>
+					</li>
+					<li>
+						<a onclick="compare('paper', computerChoice)">
+							<img src="assets/img/paper.jpg" width="100px" />
+						</a>
+					</li>				
+					
+					<li>
+						<a onclick="compare('scissors', computerChoice)">
+							<img src="assets/img/scissor.jpg" width="100px" />
+						</a>
+					</li>
+				</ul>
+			
+			</div> 
+			
+			<div>
+			
+					<h3>Scores</h3>
+				
+					<div class="scores">
+					
+			 			<div class="score-box">
+			 			
+				 			<div id="myScore"></div><!-- .computerScore -->
+				 			
+				 			<span>Player</span>
+				 			
+			 			</div><!-- score-box -->
+			 			
+			 			<div class="score-box">
+			 			
+				 			<div id="computerScore"></div><!-- .computerScore -->
+				 			
+				 			<span>Computer</span>
+				 			
+			 			</div><!-- score-box -->
+		 			
+		 		</div><!-- .scores -->
+		 		
+		 	</div> <!-- two_three -->
+	 	
+	 	
+			<div>
+				
+				<h3>Choices</h3>
+			
+				<ul class="decider">
+			
+					<li>
+			 			
+			 				<span>You picked:</span>
+			 				<span id="playerChoice">Pick one to get started!</span>
+				 			
+			 		</li>
+					
+			 		<li>
+			 			
+			 				<span>Computer picked:</span>
+			 				<span id="computerChoice">You first!</span>
+				 						 			
+			 		</li>
+			 		
+		 		
+		 		</ul>
+	 			
+	 		</div>
+ 			
+ 	</div><!-- .row -->	
+
+	</div><!-- .main-body -->
+	
+	
+ <script src="jquery-1.12.0.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
